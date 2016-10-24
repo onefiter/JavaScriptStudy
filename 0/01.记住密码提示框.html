@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01.记住密码提示框</title>
+    <style>
+        #div1{
+            width:100px;
+            height:50px;
+            background: #FFCC99;
+            border: 1px solid #FF9900;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" onmouseover="appear()" onmouseout="disappear()" />自动登录
+<div id="div1">
+    请不要懒惰
+</div>
+<script>
+
+    function appear()
+    {
+        document.getElementById('div1').style.display = 'block';
+
+    }
+
+    function  disappear()
+    {
+        document.getElementById('div1').style.display = 'none';
+    }
+</script>
+</body>
+</html>
